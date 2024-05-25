@@ -1,0 +1,227 @@
+:root{
+    --red-dark: #0c160c; 
+    --font-primary: cursive;
+    --font-secundary: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seri
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-secundary);
+    
+}
+
+li{
+    list-style: none;
+}
+
+nav>ul{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+/***sacar el subrayado***/
+a{
+    text-decoration: none;
+}
+/*   PSEUDOCLASES  */
+a:visited{
+    color: red
+
+}
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: blueviolet;
+
+}
+
+ul>li:last-child>a{
+    color: green;
+}
+
+a:hover, ul>li:last-child>a:hover{
+    color: blue;
+}
+
+/* PSEUDOELEMENTOS*/
+h1::after{
+    content: "PSEUDOELEMENTOS";
+    font-family: var(--font-primary);
+  
+   
+}
+
+a::after{
+    content: "⏬";
+    background-color: var(--red-dark);
+    font-family: var(--font-primary);
+}
+
+p{
+    margin: 40px 5px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+p::selection{
+    background-color: red;
+    color: white;
+}
+
+form>input[type="text"]{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+}
+form>input[type="text"]::placeholder{
+    background-color: red;
+    color: wheat;
+}
+
+/* ANIMACIONES Y TRANSICIONES*/
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(300px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: 50px 10px;
+    animation: mover;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+}
+
+h1{
+    color: red;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover{
+    color: green;
+}
+
+
+
+
+
+.product-card {
+    background-color: #EEEFF1;
+    width: 200px;
+}
+
+.card-img {
+    width: 150px;
+}
+
+.product-card{
+    margin: 100px;
+    background-color: #EEEFF1;
+    width: 400px;
+    height: 600px;
+    font-size: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+@keyframes giro { 
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-img{
+    width: 150px;
+    margin-bottom: 50px;
+    animation: giro 2s;
+}
+.product-card button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10PX 20PX;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.product-card button:hover{
+    background-color: #45a049;
+}
+
+.product-card .price{
+    color: #d41e1e;
+    font-size: 28px;
+}
+.product-card h3{
+    position: relative;
+    display: inline-block;
+}
+.product-card h3:hover{
+    cursor: crosshair;
+}
+
+
+.product-card .price::before{
+    content: "$ ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+   
+    
+    
+   
+ 
