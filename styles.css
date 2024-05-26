@@ -163,7 +163,9 @@ h1:hover{
 .card-img{
     width: 150px;
     margin-bottom: 50px;
-    animation: giro 2s;
+    animation: giro;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
 }
 .product-card button{
     background-color: #4CAF50;
@@ -173,6 +175,7 @@ h1:hover{
     cursor: pointer;
     border-radius: 8px;
 }
+   
 
 .product-card button:hover{
     background-color: #45a049;
